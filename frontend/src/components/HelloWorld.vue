@@ -20,27 +20,23 @@ defineProps<{
 }
 
 h1 {
-  width: 400px;
-  margin-left: 200px;
   font-weight: 500;
-  font-size: 2.6rem;
+  font-size: 2rem;
   color: #4caf50; /* 绿色字体 */
   margin-bottom: 0.5rem; /* 添加一些底部边距 */
 }
 
 h3 {
-  width: 400px;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333; /* 深灰色字体 */
   margin-bottom: 1rem; /* 添加一些底部边距 */
   width: 100%; /* 确保段落宽度充满容器 */
 }
 
 .greetings {
-  max-width: 800px; /* 限制最大宽度 */
+  max-width: 100%; /* 限制最大宽度 */
   margin: 0 auto; /* 水平居中 */
-  padding: 2rem; /* 四周添加一些内边距 */
+  padding: 1rem; /* 四周添加一些内边距 */
 }
 
 .greetings h1,
@@ -48,7 +44,20 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .greetings {
+    max-width: 800px; /* 限制最大宽度 */
+    padding: 2rem; /* 四周添加一些内边距 */
+  }
+
   .greetings h1,
   .greetings h3 {
     text-align: left;

@@ -26,13 +26,13 @@ for delaytime in range(0,61):
 with open(f'{filename[user]}.cookie','w') as file:
     if user==0:
         cookies = driver.get_cookies()
-        with open('jd_cookies.pkl', 'wb') as f:
-        pickle.dump(cookies, f)
+        with open('tb_cookies.pkl', 'wb') as f:
+            pickle.dump(cookies, f)
         print('\n 疑似登录失败')
     if user!=0:
         cookies = driver.get_cookies()
-        with open('jd_cookies.pkl', 'wb') as f:
-        pickle.dump(cookies, f)
+        with open('tb_cookies.pkl', 'wb') as f:
+            pickle.dump(cookies, f)
 driver.close()
 driver.quit()
 print('\nCookie已保存')

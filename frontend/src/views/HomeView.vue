@@ -6,7 +6,7 @@
       src="@/assets/favicon.svg"
       width="250"
       height="175"
-      style="margin-left: 290px"
+      style="display: block; margin-left: auto; margin-right: auto; text-align: center"
     />
 
     <div class="wrapper">
@@ -146,6 +146,37 @@ const login = async () => {
     flex-direction: row;
     align-items: center;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 150px;
+    height: 100px;
+    margin-left: 0;
+  }
+
+  .wrapper {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-left: 10px;
+    padding: 0.5rem;
+  }
+
+  .inputholder {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .input-field {
+    width: 90%;
+  }
+
+  .submit-button {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 </style>

@@ -6,7 +6,7 @@
       src="@/assets/favicon.svg"
       width="250"
       height="175"
-      style="margin-left: 290px"
+      style="display: block; margin-left: auto; margin-right: auto; text-align: center"
     />
 
     <div class="wrapper">
@@ -160,6 +160,50 @@ const register = async () => {
 .nav-link.router-link-exact-active {
   font-weight: bold;
   background-color: transparent;
+}
+
+/* 响应式设计 */
+@media (min-width: 1024px) {
+  .text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .inputholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inputholder {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /* 响应式设计 */
